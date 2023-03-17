@@ -29,7 +29,10 @@ Start the coldfusion container
 ### Admin interface
 http://localhost:8080/CFIDE/administrator/index.cfm
 The password is set in `docker-compose.yml` and setting your own value for `CFCONFIG_ADMINPASSWORD`
-Also, you will need to comment out the entire apache service in the `docker-compose.yml` to view the admin because of silly routing and failing to load resources.
+
+Remember to check set the onServerStart to use /www/gvsu/Server.cfc, add `bananas` as the mail server, add `/www/gvsu/customtags` as a Custom Tag Path, and add your datasources!
+
+Also, you may need to comment out the entire apache service in the `docker-compose.yml` to view the admin because of silly routing and failing to load resources. Only do this if you are running into weird issues inside the admin.
 
 ```yml
 ...
