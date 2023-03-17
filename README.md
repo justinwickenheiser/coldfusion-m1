@@ -23,9 +23,7 @@ Do this after installing docker and before the first run of docker-sync.
 
 ### Build/Run
 
-Build the coldfusion container
-```docker-compose build```
-Start the coldfusion container.
+Start the coldfusion container
 ```docker-compose up -d```
 
 ### Admin interface
